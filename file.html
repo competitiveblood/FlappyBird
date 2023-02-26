@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flappy Bird in HTML</title>
+    <style>
+      #bird {
+        width: 40px;
+        height: 30px;
+        position: absolute;
+        left: 50px;
+        top: 200px;
+        background-image: url('bird.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+      }
+
+      .pipe {
+        width: 60px;
+        height: 250px;
+        position: absolute;
+        background-color: green;
+        bottom: 0;
+        z-index: 2;
+      }
+
+      #pipe1 {
+        left: 300px;
+      }
+
+      #pipe2 {
+        left: 500px;
+      }
+
+      #score {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 24px;
+        color: white;
+        z-index: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="bird"></div>
+    <div class="pipe" id="pipe1"></div>
+    <div class="pipe" id="pipe2"></div>
+    <div id="score">0</div>
+
+    <script src="flappy-bird.js"></script>
+  </body>
+</html>
