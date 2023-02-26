@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: skyblue;
+  position: relative;
+  height: 100vh;
+}
+
+.pipe {
+  border-radius: 10px;
+}
+
+#pipe1 {
+  animation: pipe1 3s infinite linear;
+}
+
+#pipe2 {
+  animation: pipe2 3s infinite linear;
+}
+
+@keyframes pipe1 {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -60px;
+  }
+}
+
+@keyframes pipe2 {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -60px;
+  }
+}
